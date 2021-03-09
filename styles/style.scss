@@ -27,7 +27,8 @@ $media-mobile: "only screen and (max-width : 480px)";
 
 
 
-html, body {
+html,
+body {
     font-size: 14px;
     background: $intro-background-color;
     color: $white;
@@ -44,7 +45,7 @@ html, body {
     white-space: nowrap;
     width: 100%;
     padding: 25px 60px 10px 60px;
-    margin-bottom: 7%;
+    margin-bottom: 5px;
 
     ul {
         list-style-type: none;
@@ -55,10 +56,13 @@ html, body {
         margin-right: 35px;
     }
 
-    a, a:hover, a:focus, a:active {
+    a,
+    a:hover,
+    a:focus,
+    a:active {
         text-decoration: none;
         color: inherit;
-   }
+    }
 }
 
 //intro section
@@ -68,14 +72,17 @@ html, body {
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 12%;
 
-    .intro-img-container{
+
+    .intro-img-container {
         margin-bottom: 50px;
+        z-index: 1;
     }
 
     .intro-text-container {
         width: 100%;
+        z-index: 1;
 
         .intro-statement {
             font-size: 1.5rem;
@@ -83,23 +90,26 @@ html, body {
             width: 75%;
             margin-bottom: 40px;
         }
+    }
 
-        .intro-header {
-            margin-bottom: 50px;
-        }
+    .intro-header {
+        margin-bottom: 50px;
     }
 }
 
-.call-to-action-button{
+.call-to-action-button {
     border: none;
     outline: none;
     background: $call-to-action-gradient;
     color: $white;
-    padding: 20px 75px;
     font-family: $header-font;
     font-weight: 700;
     font-size: 1.3rem;
     border-radius: 40px;
+}
+
+.button-get-started {
+    padding: 20px 75px;
 }
 
 h2 {
@@ -108,10 +118,60 @@ h2 {
     font-weight: 700;
 }
 
-//media query desktop
-@media #{$media-desktop} {
- 
+.main-body-container {
+    background: $main-background-color;
+    padding-top: 50px;
+    position: relative;
+
+    .features-section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .feature-card {
+        text-align: center;
+        flex-basis: 45%;
+        margin: 25px 20px;
+
+
+        // img {
+        //     max-width: 100%;
+        //     height: auto;
+        // }
+
+        .feature-card-img-container {
+            height: 80px;
+        }
+
+        h4 {
+            font-family: $header-font;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 1.7rem;
+        }
+
+        p {
+            // text-align: center;
+            margin: 0 auto;
+            width: 65%;
+        }
+    }
 }
+
+.main-body-container::before {
+    content: url(../images/bg-curvy-desktop.svg);
+    position: absolute;
+    right: 0;
+    bottom: 98%;
+    z-index: 0;
+}
+
+//media query desktop
+@media #{$media-desktop} {}
 
 
 //media query mobile
@@ -132,10 +192,47 @@ h2 {
 
     .intro-section {
         width: 80%;
-        img{
+
+        img {
             width: 100%;
         }
+
+        .intro-header {
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+        }
+
+        .intro-text-container {
+            .intro-statement {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+        }
+
     }
+
+    .main-body-container {
+        margin-bottom: 2%;
+        .feature-card {
+            flex-basis: 100%;
+            margin-bottom: 50px;
+
+            h4 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .main-body-container::before {
+        content: url(../images/bg-curvy-mobile.svg);
+        position: absolute;
+        right: 0;
+        bottom: 99%;
+        z-index: 0;
+    }
+
 }
-
-
