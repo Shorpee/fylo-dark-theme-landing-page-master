@@ -28,7 +28,7 @@ body {
   white-space: nowrap;
   width: 100%;
   padding: 25px 60px 10px 60px;
-  margin-bottom: 5px;
+  margin-bottom: 10%;
 }
 
 .nav-bar ul {
@@ -97,6 +97,10 @@ body {
   border-radius: 40px;
 }
 
+.call-to-action-button:hover {
+  background: #65e2d9;
+}
+
 .button-get-started {
   padding: 20px 75px;
 }
@@ -124,6 +128,7 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 10%;
 }
 
 .main-body-container .feature-card {
@@ -146,8 +151,75 @@ h2 {
 }
 
 .main-body-container .feature-card p {
+  font-size: 1.1rem;
   margin: 0 auto;
   width: 65%;
+}
+
+.main-body-container .stay-productive-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 10%;
+}
+
+.main-body-container .stay-productive-img-container {
+  width: 40%;
+}
+
+.main-body-container .stay-productive-text-container {
+  width: 40%;
+}
+
+.main-body-container .stay-productive-text-container h2 {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.main-body-container .stay-productive-text-container p {
+  font-size: 1.2rem;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.main-body-container .stay-productive-text-container a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.main-body-container .stay-productive-text-container a div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3px;
+  color: #65e2d9;
+  border-bottom: 2px solid #65e2d9;
+}
+
+.main-body-container .stay-productive-text-container a div span {
+  margin-right: 10px;
+}
+
+.main-body-container .stay-productive-text-container a div:hover {
+  color: white !important;
+  border-bottom: 2px solid white;
+}
+
+.main-body-container .stay-productive-text-container a div:hover img {
+  color: #65e2d9 !important;
+  fill: white !important;
 }
 
 .main-body-container::before {
@@ -160,6 +232,7 @@ h2 {
 
 @media only screen and (max-width: 480px) {
   .nav-bar {
+    margin-bottom: 20%;
     padding: 25px 30px 10px 30px;
   }
   .nav-bar img {
@@ -195,6 +268,29 @@ h2 {
   }
   .main-body-container .feature-card p {
     width: 100%;
+    font-size: 1.1rem;
+  }
+  .main-body-container .stay-productive-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-body-container .stay-productive-section .stay-productive-img-container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .main-body-container .stay-productive-section .stay-productive-img-container img {
+    width: 100%;
+  }
+  .main-body-container .stay-productive-section .stay-productive-text-container {
+    width: 100%;
+  }
+  .main-body-container .stay-productive-section .stay-productive-text-container h2 {
+    width: 100%;
+    font-size: 1.3rem;
   }
   .main-body-container::before {
     content: url(../images/bg-curvy-mobile.svg);
