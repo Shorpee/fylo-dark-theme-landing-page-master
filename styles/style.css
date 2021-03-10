@@ -114,6 +114,7 @@ h2 {
 .main-body-container {
   background: #181f2a;
   padding-top: 50px;
+  padding-bottom: 10%;
   position: relative;
 }
 
@@ -222,6 +223,127 @@ h2 {
   fill: white !important;
 }
 
+.main-body-container .testimonial-section::before {
+  content: url(../images/bg-quotes.png);
+  position: absolute;
+  bottom: 31%;
+  left: 5.7%;
+}
+
+.main-body-container .testimonial-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 10%;
+}
+
+.main-body-container .testimonial-section .testimonial-card {
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
+  background: #1c2431;
+  width: 25%;
+  padding: 30px 15px 15px 15px;
+  -webkit-box-shadow: -3px -9px 40px -127px #080808;
+          box-shadow: -3px -9px 40px -127px #080808;
+  border-radius: 5px;
+}
+
+.main-body-container .testimonial-section .testimonial-card .testimonial {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.main-body-container .testimonial-section .testimonial-card .testimonial-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-body-container .testimonial-section .testimonial-card .profile-pic-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-body-container .testimonial-section .testimonial-card .profile-pic-container img {
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.main-body-container .testimonial-section .testimonial-card .profile-pic-container .profile-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.main-body-container .testimonial-section .testimonial-card-1 {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action-card-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: -6%;
+}
+
+.call-to-action-card-container .call-to-action-card {
+  background: #1c2431;
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 50px 30px 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: -3px -9px 40px -127px #080808;
+          box-shadow: -3px -9px 40px -127px #080808;
+}
+
+.call-to-action-card-container .call-to-action-card .call-to-action-header {
+  margin-bottom: 20px;
+}
+
+.call-to-action-card-container .call-to-action-card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.call-to-action-card-container .call-to-action-card input {
+  width: 60%;
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.call-to-action-card-container .call-to-action-card .get-started-free-button {
+  padding: 10px 25px;
+  font-size: 0.8rem;
+}
+
+footer {
+  background: #0b1523;
+  padding-top: 12%;
+}
+
 .main-body-container::before {
   content: url(../images/bg-curvy-desktop.svg);
   position: absolute;
@@ -291,6 +413,21 @@ h2 {
   .main-body-container .stay-productive-section .stay-productive-text-container h2 {
     width: 100%;
     font-size: 1.3rem;
+  }
+  .main-body-container .testimonial-section::before {
+    bottom: 28.5%;
+    left: 12%;
+  }
+  .main-body-container .testimonial-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .main-body-container .testimonial-section .testimonial-card {
+    width: 80%;
+    margin-bottom: 40px;
   }
   .main-body-container::before {
     content: url(../images/bg-curvy-mobile.svg);

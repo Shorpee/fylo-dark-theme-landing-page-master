@@ -10,6 +10,9 @@ $call-to-action-gradient: linear-gradient(to right, #65e2d9, #49d2da, #33c1d8, #
 $error-light-red: hsl(0, 100%, 63%);
 $white: hsl(0, 0%, 100%);
 $cyan: hsl(176, 68%, 64%);
+$shadow: -3px -9px 40px -127px rgba(8, 8, 8, 1);
+
+
 
 //fonts
 $header-font: 'Raleway',
@@ -126,6 +129,7 @@ h2 {
 .main-body-container {
     background: $main-background-color;
     padding-top: 50px;
+    padding-bottom: 10%;
     position: relative;
 
     .features-section {
@@ -189,7 +193,7 @@ h2 {
             margin-bottom: 20px;
         }
 
-        a{
+        a {
             text-decoration: none;
             color: inherit;
             font-size: 1.2rem;
@@ -201,22 +205,133 @@ h2 {
                 padding-bottom: 3px;
                 color: $cyan;
                 border-bottom: 2px solid $cyan;
-                
+
                 span {
                     margin-right: 10px;
                 }
 
                 &:hover {
-                    color: $white!important;
+                    color: $white !important;
                     border-bottom: 2px solid $white;
                 }
-                &:hover img{
+
+                &:hover img {
                     color: $cyan !important;
-                    fill: $white!important;
+                    fill: $white !important;
                 }
             }
         }
     }
+
+    .testimonial-section::before {
+        content: url(../images/bg-quotes.png);
+        position: absolute;
+        bottom: 31%;
+        left: 5.7%;
+    }
+
+    .testimonial-section {
+        display: flex;
+        // flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 10%;
+
+
+
+        .testimonial-card {
+            flex-basis: 1;
+            background: $intro-background-color;
+            width: 25%;
+            padding: 30px 15px 15px 15px;
+            box-shadow: $shadow;
+            border-radius: 5px;
+
+            .testimonial {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+
+            .testimonial-description {
+                display: flex;
+                align-items: center;
+            }
+
+            .profile-pic-container {
+                display: flex;
+
+                img {
+                    width: 2.5rem;
+                    border-radius: 50%;
+                    margin-right: 7px;
+                }
+
+                .profile-name {
+                    font-family: $header-font;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                }
+            }
+
+        }
+
+        .testimonial-card-1 {
+            position: relative;
+            z-index: 3;
+        }
+
+
+
+
+    }
+}
+
+.call-to-action-card-container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -6%;
+
+    .call-to-action-card {
+        background: $intro-background-color;
+        width: 60%;
+        margin: 0 auto;
+        padding: 50px 50px 30px 50px;
+        border-radius: 5px;
+        box-shadow: $shadow;
+
+        .call-to-action-header {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 60%;
+            outline: none;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 20px;
+            font-family: $body-font;
+            font-weight: 400;
+            margin-right: 20px;
+        }
+
+        .get-started-free-button {
+            padding: 10px 25px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+footer {
+    background: $footer-background-color;
+    padding-top: 12%;
 }
 
 .main-body-container::before {
@@ -294,7 +409,7 @@ h2 {
             .stay-productive-img-container {
                 width: 100%;
                 margin-bottom: 40px;
-            
+
                 img {
                     width: 100%;
                 }
@@ -306,7 +421,23 @@ h2 {
                 h2 {
                     width: 100%;
                     font-size: 1.3rem;
+                }
             }
+        }
+
+        .testimonial-section::before {
+            bottom: 28.5%;
+            left: 12%;
+
+        }
+
+        .testimonial-section {
+            flex-direction: column;
+            margin-top: 50px;
+
+            .testimonial-card {
+                width: 80%;
+                margin-bottom: 40px;
             }
         }
     }
