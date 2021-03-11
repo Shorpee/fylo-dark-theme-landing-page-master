@@ -488,7 +488,8 @@ footer {
     }
 
     .main-body-container {
-        margin-bottom: 2%;
+        padding-bottom: 50%;
+        // margin-bottom: 2%;
 
         .feature-card {
             flex-basis: 100%;
@@ -529,19 +530,47 @@ footer {
         }
 
         .testimonial-section::before {
-            bottom: 28.5%;
-            left: 12%;
+            bottom: 34%;
+            left: 14%;
 
         }
 
         .testimonial-section {
             flex-direction: column;
             margin-top: 50px;
-
+            margin-bottom: 10%;
+            padding-top: 30%;
+    
             .testimonial-card {
-                width: 80%;
+                width: 75%;
                 margin-bottom: 40px;
             }
+        }
+    }
+
+    .call-to-action-card-container {
+        
+        .call-to-action-card {
+            width: 85%;
+            padding: 25px 10px;
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .get-started-free-button {
+                width: 100%;
+            }
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 1.5rem;
         }
     }
 
@@ -553,6 +582,37 @@ footer {
         z-index: 0;
     }
 
+    .contact-info-section {
+        flex-direction: column;
+    }
+
+    footer{
+        padding-top: 65%;
+        padding-right: 35px;
+        padding-left: 35px;
+
+        .address {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .contacts {
+            margin-bottom: 40px;
+        }
+
+        .sitemap {
+            margin-bottom: 20px;
+            flex-direction: column;
+
+            .sitemap-section-1 {
+                margin-bottom: 40px;
+            }
+        }
+
+        ul {
+            padding: 0;
+        }
+    }
 
 
 }

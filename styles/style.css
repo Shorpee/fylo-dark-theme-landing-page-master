@@ -499,7 +499,7 @@ footer .social-media .facebook-icon {
     font-size: 0.9rem;
   }
   .main-body-container {
-    margin-bottom: 2%;
+    padding-bottom: 50%;
   }
   .main-body-container .feature-card {
     -ms-flex-preferred-size: 100%;
@@ -536,8 +536,8 @@ footer .social-media .facebook-icon {
     font-size: 1.3rem;
   }
   .main-body-container .testimonial-section::before {
-    bottom: 28.5%;
-    left: 12%;
+    bottom: 34%;
+    left: 14%;
   }
   .main-body-container .testimonial-section {
     -webkit-box-orient: vertical;
@@ -545,10 +545,30 @@ footer .social-media .facebook-icon {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 50px;
+    margin-bottom: 10%;
+    padding-top: 30%;
   }
   .main-body-container .testimonial-section .testimonial-card {
-    width: 80%;
+    width: 75%;
     margin-bottom: 40px;
+  }
+  .call-to-action-card-container .call-to-action-card {
+    width: 85%;
+    padding: 25px 10px;
+  }
+  .call-to-action-card-container .call-to-action-card p {
+    font-size: 1.1rem;
+  }
+  .call-to-action-card-container .call-to-action-card input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .call-to-action-card-container .call-to-action-card .get-started-free-button {
+    width: 100%;
+  }
+  .call-to-action-card-container h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
   }
   .main-body-container::before {
     content: url(../images/bg-curvy-mobile.svg);
@@ -556,6 +576,37 @@ footer .social-media .facebook-icon {
     right: 0;
     bottom: 99%;
     z-index: 0;
+  }
+  .contact-info-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer {
+    padding-top: 65%;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  footer .address {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .contacts {
+    margin-bottom: 40px;
+  }
+  footer .sitemap {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .sitemap .sitemap-section-1 {
+    margin-bottom: 40px;
+  }
+  footer ul {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
