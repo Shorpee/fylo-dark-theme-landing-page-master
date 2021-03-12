@@ -454,9 +454,61 @@ footer {
         }
     }
 
-    .main-body-container .feature-card {
-        flex-basis: 100%;
+    .main-body-container {
+        padding-bottom: 30%;
+
+        .feature-card {
+            flex-basis: 100%;
+        }
     }
+
+    .main-body-container .stay-productive-section {
+        padding-bottom: 18%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .main-body-container .stay-productive-text-container {
+        h2 { 
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+        p {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        a div {
+            white-space: nowrap;
+        }
+    }
+
+    .main-body-container .testimonial-section > * {
+        flex-basis: 30%;
+    }
+
+    .call-to-action-card-container {
+        bottom: -7%;
+
+        .call-to-action-card {
+            width: 80%;
+        }
+    }
+
+    footer {
+        padding-top: 35%;
+
+        .contact-info-section {
+            flex-wrap: wrap;
+        }
+
+        .social-media {
+            margin-top: 40px;
+        }
+    }
+
 }
 
 
