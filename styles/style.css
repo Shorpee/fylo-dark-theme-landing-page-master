@@ -473,6 +473,16 @@ footer .social-media .facebook-icon {
   width: 0.9rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .intro-section img {
+    width: 80%;
+  }
+  .main-body-container .feature-card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .nav-bar {
     margin-bottom: 20%;
